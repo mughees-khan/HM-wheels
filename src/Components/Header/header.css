@@ -1,0 +1,23 @@
+*{
+    font-family: sans-serif;
+}
+.header-signin{
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.header-catogories{
+    display: flex;
+    justify-content: space-around;
+}
+.header-links{
+    cursor: pointer;
+    font-size: large;
+}
+.header-links:hover{
+    color: rgb(255, 64, 64);
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
