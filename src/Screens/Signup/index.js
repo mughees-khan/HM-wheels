@@ -17,6 +17,7 @@ function Signup() {
   return (
     <div className="signup-main">
       <div className="signup">
+        <h1 className="signup-heading">Sign Up</h1>
         <input
           className="signup-fields"
           type="text"

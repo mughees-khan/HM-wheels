@@ -1,21 +1,33 @@
-import "./header.css"
-import { BrowserRouter, Routes, Route,Link } from "react-router-dom"
+import logo from "../../images/hm logo.jpg";
+import { useNavigate } from "react-router-dom";
+import "./header.css";
+import { Link } from "react-router-dom";
 import React from "react";
-function Header(){
-    return(
-        <div className="main-header">
-            <div className="header-signin">
-                <Link to="Signup" className="header-links">Sign Up</Link>
-                <Link to="Signin" className="header-links">Sign In</Link>
-            </div>
-            <div className="header-catogories">
-                <img className="header-img" src="" alt=""/>
-                <a className="header-links">Used cars</a>
-                <a className="header-links">New cars</a>
-                <a className="header-links">videos</a>
-                <a className="header-links">Sell</a>
-            </div>
+function Header() {
+  const navigate = useNavigate();
+
+  return (
+    <div className="main-header">
+      <div className="header-signin">
+        <img className="header-img" src={logo} alt="hM logo" />
+        <div className="signup-signin">
+          <Link to="Signup" className="header-links signin-signup-border">
+            Sign Up
+          </Link>
+          <Link to="Signin" className="header-links signin-signup-border">
+            Sign In
+          </Link>
         </div>
-    )
-};
+      </div>
+      <div className="header-catogories">
+        <a className="header-links">Used cars</a>
+        <a className="header-links">New cars</a>
+        <a className="header-links">videos</a>
+        <button onClick={() => navigate("postadd")} className="sell-btn">
+          Sell
+        </button>
+      </div>
+    </div>
+  );
+}
 export default Header;

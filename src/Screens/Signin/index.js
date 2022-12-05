@@ -19,6 +19,7 @@ function Login() {
   return (
     <div className="login-main">
       <div className="login">
+        <h1 className="login-heading">Login In</h1>
         <input
           className="login-fields"
           onChange={(e) => setEmail(e.target.value)}
@@ -37,7 +38,7 @@ function Login() {
           login
         </button>
         <p className="login-signup">
-          You have already account ?{" "}
+          You have no account ?{" "}
           <a href="Signup" className="login-signup-link">
             signup
           </a>
