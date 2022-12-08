@@ -120,7 +120,7 @@ function Postadd() {
           <input
             onChange={(e) => setNo(e.target.value)}
             className="postadd-fields"
-            type="number"
+            type="text"
             placeholder="Mobile Number"
             required
           />
@@ -130,7 +130,7 @@ function Postadd() {
           <input
             onChange={(e) => setSecno(e.target.value)}
             className="postadd-fields"
-            type="number"
+            type="text"
             placeholder="Secondary Number"
             required
           />

@@ -22,7 +22,9 @@ function Header() {
       <div className="header-catogories">
         <a className="header-links">Used cars</a>
         <a className="header-links">New cars</a>
-        <a className="header-links">videos</a>
+        <Link to="video" className="header-links">
+          videos
+        </Link>
         <button onClick={() => navigate("postadd")} className="sell-btn">
           Sell
         </button>

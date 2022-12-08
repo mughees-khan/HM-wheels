@@ -1,5 +1,6 @@
 import Signup from "./Screens/Signup";
 import Login from "./Screens/Signin";
+import Videos from "./Screens/Videos";
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -13,6 +14,7 @@ function App() {
         <Route path="Signup" element={<Signup />} />
         <Route path="Signin" element={<Login />} />
         <Route path="postadd" element={<Postadd />} />
+        <Route path="video" element={<Videos />} />
       </Routes>
     </BrowserRouter>
   );
