@@ -9,6 +9,10 @@
 .main-header {
   background-color: #141414;
   padding: 20px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .header-signin {
   display: flex;

@@ -11,21 +11,25 @@ function Header() {
       <div className="header-signin">
         <img className="header-img" src={logo} alt="hM logo" />
         <div className="signup-signin">
-          <Link to="Signup" className="header-links signin-signup-border">
+          <Link to="/Signup" className="header-links signin-signup-border">
             Sign Up
           </Link>
-          <Link to="Signin" className="header-links signin-signup-border">
+          <Link to="/Signin" className="header-links signin-signup-border">
             Sign In
           </Link>
         </div>
       </div>
       <div className="header-catogories">
-        <a className="header-links">Used cars</a>
-        <a className="header-links">New cars</a>
-        <Link to="video" className="header-links">
+        <Link to="/" className="header-links">
+          Used cars
+        </Link>
+        <Link to="/new" className="header-links">
+          New cars
+        </Link>
+        <Link to="/video" className="header-links">
           videos
         </Link>
-        <button onClick={() => navigate("postadd")} className="sell-btn">
+        <button onClick={() => navigate("/postadd")} className="sell-btn">
           Sell
         </button>
       </div>

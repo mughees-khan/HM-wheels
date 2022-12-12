@@ -1,14 +1,10 @@
 import Footer from "../../Components/Footer";
 import Header from "../../Components/Header";
-import leftfblogo from "../../images/left fb logo.png";
-import leftinstalogo from "../../images/left insta logo.png";
-import lefttwiterlogo from "../../images/left twiter logo.png";
-import leftmsglogo from "../../images/left msg logo.png";
-import "./home.css";
 import { useEffect, useState } from "react";
 import { getRealTimeAds } from "../../config/firebase";
+import "./new.css";
 import { Link } from "react-router-dom";
-function Home() {
+function Newcars() {
   const [adds, setAds] = useState([]);
   function getAds() {
     getRealTimeAds((ads) => {
@@ -21,13 +17,13 @@ function Home() {
   return (
     <div>
       <Header />
-      <div className="usedcars-top-text">
-        <h1>Find used cars in Pakistan</h1>
-        <p>With thousand of cars,we have just the right one for you</p>
+      <div className="newcars-text">
+        <h1>Find New Cars in Pakistan</h1>
+        <p>Find information about the latest cars in the market</p>
       </div>
       <div className="all-usedcar-ads">
         {adds.map((add) =>
-          add.km != "0" ? (
+          add.km == "0" ? (
             <Link to="/detail" state={{ add }}>
               <div className="card">
                 <img className="card-img" src={add.imageUrl} />
@@ -41,14 +37,8 @@ function Home() {
           ) : null
         )}
       </div>
-      <div className="fixed-leftside-logos">
-        <img className="left-side-logos" src={leftfblogo} alt="" />
-        <img className="left-side-logos" src={leftinstalogo} alt="" />
-        <img className="left-side-logos" src={lefttwiterlogo} alt="" />
-        <img className="left-side-logos" src={leftmsglogo} alt="" />
-      </div>
       <Footer />
     </div>
   );
 }
-export default Home;
+export default Newcars;

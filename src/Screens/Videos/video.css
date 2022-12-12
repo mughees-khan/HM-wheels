@@ -4,6 +4,7 @@
 .video-main {
   width: 90%;
   margin: 0% auto;
+  background-color: rgba(250, 215, 215, 0.774);
 }
 .videos {
   width: 350px;
@@ -14,7 +15,7 @@
 .videos-top-text {
   background-color: rgb(0, 130, 216);
   color: rgb(255, 251, 247);
-  padding: 50px;
+  padding: 100px;
 }
 .ifr-vid {
   width: 350px;

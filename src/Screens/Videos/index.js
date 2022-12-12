@@ -6,7 +6,7 @@ function Videos() {
     <div>
       <Header />
       <div className="videos-top-text">
-        <h1>PakWheels Videos</h1>
+        <h1>HMWheels Videos</h1>
         <p>Find information about the latest cars reviews in the market</p>
       </div>
       <div className="video-main">
