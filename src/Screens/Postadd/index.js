@@ -36,6 +36,7 @@ function Postadd() {
       alert("ad post successfully");
       navigate("/");
     } catch (e) {
+      console.log(e);
       alert("please fill the all required fields");
     }
   }

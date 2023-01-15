@@ -1,16 +1,19 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { signInFirebase } from "../../config/firebase";
+import UserContext from "../../context/userContext";
 import "./signin.css";
 function Login() {
   const navigate = useNavigate();
+  const { setUser, user } = useContext(UserContext);
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   async function signin() {
     try {
-      await signInFirebase(email, password);
+      const active = await signInFirebase(email, password);
+      setUser(active.user);
       navigate("/");
     } catch (e) {
       alert("Wrong email or pass");
