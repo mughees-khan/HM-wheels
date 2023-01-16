@@ -1,4 +1,5 @@
 import logo from "../../images/hm logo.jpg";
+import profile from "../../images/profile icon.png";
 import { useNavigate } from "react-router-dom";
 import "./header.css";
 import { Link } from "react-router-dom";
@@ -14,9 +15,12 @@ function Header() {
         <img className="header-img" src={logo} alt="hM logo" />
         <div className="signup-signin">
           {user.email ? (
-            <Link to="/Signin" className="header-links signin-signup-border">
-              Logout
-            </Link>
+            <div className="profile-logout">
+              <Link to="/Signin" className="header-links signin-signup-border">
+                Logout
+              </Link>
+              <img className="profile-icon" src={profile} alt="profile" />
+            </div>
           ) : (
             <>
               <Link to="/Signup" className="header-links signin-signup-border">

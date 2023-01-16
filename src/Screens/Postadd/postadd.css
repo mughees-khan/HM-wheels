@@ -21,7 +21,7 @@
 .main-postadd {
   display: flex;
   justify-content: center;
-  background-image: url(../../images/postadd-bg-img.jpg);
+  background-image: url(../../images/add\ back.jpg);
   background-size: cover;
 }
 .postadd-form-heading {

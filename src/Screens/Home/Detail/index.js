@@ -12,19 +12,39 @@ function Detail() {
           <div className="left-detail">
             <img className="detail-img" src={location.state.add.imageUrl} />
             <div className="det-carinfo-price">
-              <h3 className="det-carinfo">{location.state.add.carinfo}</h3>
-              <h3 className="det-price">{location.state.add.price}</h3>
-              <h3 className="det-km">{location.state.add.km}</h3>
+              <div>
+                <h3>CarInfo</h3>
+                <h3 className="detail-txt">{location.state.add.carinfo}</h3>
+              </div>
+              <div>
+                <h3>Price</h3>
+                <h3 className="detail-txt">{location.state.add.price}</h3>
+              </div>
+              <div>
+                <h3>KM</h3>
+                <h3 className="detail-txt">{location.state.add.km}</h3>
+              </div>
             </div>
             <div className="det-city-color">
-              <h3 className="det-city">{location.state.add.city}</h3>
-              <h3 className="det-color">{location.state.add.color}</h3>
+              <div>
+                <h3>City</h3>
+                <h3 className="detail-txt">{location.state.add.city}</h3>
+              </div>
+              <div>
+                <h3>Color</h3>
+                <h3 className="detail-txt">{location.state.add.color}</h3>
+              </div>
             </div>
-            <p className="det-description">{location.state.add.description}</p>
+            <h3>Description</h3>
+            <h3 className="detail-txt">{location.state.add.description}</h3>
           </div>
           <div className="right-detail">
-            <h3 className="no">{location.state.add.no}</h3>
-            <h3 className="secno">{location.state.add.secno}</h3>
+            <h3>Primary Number</h3>
+            <h3 className="detail-txt">{location.state.add.no}</h3>
+            <h3>Secondary number</h3>
+            <h3 className="detail-txt">{location.state.add.secno}</h3>
+            <h3>Wallet Address</h3>
+            <h3 className="detail-txt">{location.state.add.address}</h3>
             <button className="chat-btn">Chat</button>
           </div>
         </div>

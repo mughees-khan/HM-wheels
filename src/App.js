@@ -10,7 +10,7 @@ import Newcars from "./Screens/Newcars";
 import Detail from "./Screens/Home/Detail";
 import UserContext from "./context/userContext";
 function App() {
-  const [user, setUser] = useState("abcd");
+  const [user, setUser] = useState("");
   return (
     <UserContext.Provider value={{ user, setUser }}>
       <BrowserRouter>

@@ -12,6 +12,7 @@ function Postadd() {
   const [image, setImage] = useState("");
   const [no, setNo] = useState("");
   const [secno, setSecno] = useState("");
+  const [address, setAddress] = useState("");
 
   const upload = (e) => {
     if (e.target.value) {
@@ -31,9 +32,10 @@ function Postadd() {
         des,
         imageUrl,
         no,
-        secno
+        secno,
+        address
       );
-      alert("ad post successfully");
+
       navigate("/");
     } catch (e) {
       console.log(e);
@@ -86,12 +88,12 @@ function Postadd() {
           />
         </div>
         <div className="postadd-text-fields">
-          <h3>Price(Rs):</h3>
+          <h3>Price(ETH):</h3>
           <input
             onChange={(e) => setPrice(e.target.value)}
             className="postadd-fields"
             type="text"
-            placeholder="Price"
+            placeholder="Price in ETH"
             required
           />
         </div>
@@ -133,6 +135,16 @@ function Postadd() {
             className="postadd-fields"
             type="text"
             placeholder="Secondary Number"
+            required
+          />
+        </div>
+        <div className="postadd-text-fields">
+          <h3>Wallet Address</h3>
+          <input
+            onChange={(e) => setAddress(e.target.value)}
+            className="postadd-fields"
+            type="text"
+            placeholder="wallet Address"
             required
           />
         </div>

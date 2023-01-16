@@ -22,8 +22,9 @@
 .card {
   width: 320px;
   display: inline-block;
-  background-color: rgba(250, 215, 215, 0.774);
+  background-color: rgb(255, 255, 255);
   margin: 20px;
+  box-shadow: 5px 5px rgb(155, 155, 155);
 }
 .card-img {
   width: 320px;
@@ -46,6 +47,6 @@
 }
 .all-usedcar-ads {
   width: 81%;
-  background-color: rgb(220, 252, 252);
+
   margin: 0% auto;
 }

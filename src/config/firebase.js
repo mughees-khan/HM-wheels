@@ -64,7 +64,8 @@ function postAdToDb(
   description,
   imageUrl,
   no,
-  secno
+  secno,
+  address
 ) {
   const userId = auth.currentUser.uid;
   return addDoc(collection(db, "ads"), {
@@ -77,6 +78,7 @@ function postAdToDb(
     imageUrl,
     no,
     secno,
+    address,
     userId,
   });
 }
